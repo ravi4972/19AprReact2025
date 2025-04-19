@@ -1,0 +1,25 @@
+#heading{
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#headingH2{
+    color: blue;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#list{
+    color: green;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ul{
+    list-style-type: none;
+    padding: 0;
+}
