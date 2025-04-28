@@ -1,0 +1,23 @@
+export const items = [
+    {id: 1, name: "Bottle", tag: ["container", "plastic", "litre"], price: 100, stock: 20},
+    {id: 2, name: "Bag", tag: ["container", "jute"], price: 10, stock: 100},
+    {id: 3, name: "Apple", tag: ["fruit", "fresh", "organic"], price: 120, stock: 50},
+    {id: 4, name: "Milk Packet", tag: ["dairy", "liquid", "litre"], price: 60, stock: 80},
+    {id: 5, name: "Bread", tag: ["bakery", "wheat"], price: 40, stock: 30},
+    {id: 6, name: "Cheese", tag: ["dairy", "solid", "packaged"], price: 250, stock: 15},
+    {id: 7, name: "Tomato", tag: ["vegetable", "fresh", "organic"], price: 30, stock: 100},
+    {id: 8, name: "Potato", tag: ["vegetable", "root"], price: 20, stock: 200},
+    {id: 9, name: "Onion", tag: ["vegetable", "root"], price: 25, stock: 180},
+    {id: 10, name: "Rice", tag: ["grains", "staple", "packaged"], price: 500, stock: 60},
+    {id: 11, name: "Sugar", tag: ["grains", "sweetener"], price: 45, stock: 90},
+    {id: 12, name: "Salt", tag: ["spices", "essential"], price: 20, stock: 150},
+    {id: 13, name: "Tea Powder", tag: ["beverage", "packaged"], price: 180, stock: 40},
+    {id: 14, name: "Coffee", tag: ["beverage", "instant"], price: 300, stock: 35},
+    {id: 15, name: "Eggs", tag: ["poultry", "protein"], price: 60, stock: 70},
+    {id: 16, name: "Banana", tag: ["fruit", "fresh"], price: 50, stock: 90},
+    {id: 17, name: "Orange Juice", tag: ["beverage", "bottle", "fruit"], price: 120, stock: 25},
+    {id: 18, name: "Cooking Oil", tag: ["essentials", "liquid"], price: 200, stock: 55},
+    {id: 19, name: "Butter", tag: ["dairy", "packaged"], price: 220, stock: 30},
+    {id: 20, name: "Biscuit", tag: ["snacks", "packaged", "sweet"], price: 30, stock: 75}
+  ];
+  

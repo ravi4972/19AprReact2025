@@ -11,6 +11,6 @@ export const Header = ()=>{
                     <li>Contact Us</li>
                 </ul>
             </div>
-        </div>
+            </div>
     )
 }

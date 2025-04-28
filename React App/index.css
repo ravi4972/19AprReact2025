@@ -34,11 +34,15 @@ body {
   }
   
 .maincontainer {
+    width:100%;
+    padding:0px;
     display: flex;
+    flex-direction: column;
+    
 }
 
 .headercontainer {
-    width:100%;
+    width:auto;
     background: linear-gradient(90deg, #fff2e5, #ffe6cc);
     padding: 15px 30px;
     display: flex;
@@ -54,18 +58,15 @@ body {
     cursor: pointer;
 }
 
-.headernav{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
-.headernav > ul{
-    list-style: none;
-    display:flex;
-    align-items: space-around;
-    justify-content: center;
+.headernav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* OR space-around if you want */
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .headernav > ul > li{
@@ -80,4 +81,27 @@ body {
 
 .headernav > ul >li:hover {
   background-color: #e07a36;
+}
+
+
+.itemsContainer{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.itemcard{
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  width:200px;
+  height: 200px;
+}
+
+.itemcard > img{
+  width:80px;
+  height: 80px;
 }
