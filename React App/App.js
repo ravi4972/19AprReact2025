@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import {Header} from './Components/Header'
-import {Items} from './Components/Items'
+import { Body } from './Components/Body';
 
 const a=10;
 const b=10;
@@ -9,7 +9,7 @@ const App=()=>{
         <div className="maincontainer">
             {/* babel convert this JSX to React Element which in turn converted to HTML by react only */}
             <Header/>
-            <Items/>
+            <Body />
         </div>
     )
 }

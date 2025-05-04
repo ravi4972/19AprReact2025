@@ -18,6 +18,7 @@ export const items = [
     {id: 17, name: "Orange Juice", tag: ["beverage", "bottle", "fruit"], price: 120, stock: 25},
     {id: 18, name: "Cooking Oil", tag: ["essentials", "liquid"], price: 200, stock: 55},
     {id: 19, name: "Butter", tag: ["dairy", "packaged"], price: 220, stock: 30},
-    {id: 20, name: "Biscuit", tag: ["snacks", "packaged", "sweet"], price: 30, stock: 75}
+    {id: 20, name: "Biscuit", tag: ["snacks", "packaged", "sweet"], price: 30, stock: 75},
+    {id: 21, name: "Id", tag: ["snacks", "packaged", "sweet"], price: 30, stock: 75},
   ];
   

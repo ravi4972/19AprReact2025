@@ -41,14 +41,17 @@ body {
 }
 
 .headercontainer {
-    width:auto;
-    background: linear-gradient(90deg, #fff2e5, #ffe6cc);
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #ffcc99; /* soft border matching theme */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ensures it stays above other content */
+  width:auto;
+  background: linear-gradient(90deg, #fff2e5, #ffe6cc);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffcc99; /* soft border matching theme */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .logo{
@@ -63,7 +66,6 @@ body {
   display: flex;
   justify-content: flex-end; /* OR space-around if you want */
   align-items: center;
-  gap: 20px;
   padding: 0;
   margin: 0;
 }
@@ -84,11 +86,11 @@ body {
 
 
 .itemsContainer{
-  width:100%;
+  width:auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap:20px;
+  padding:0 80px;
 }
 
 .itemcard{
@@ -140,4 +142,21 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.searchContainer{
+  margin:8px 80px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchContainer > input{
+  width: 200px;
+  height: auto;
+  padding:2px 5px;
+  margin: 0 5px 0 0;
+}
+
+.searchContainer > button {
+  height: 35px;
 }

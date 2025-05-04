@@ -1,10 +1,9 @@
-import {items} from '../static/items'
 import {ItemCard} from './ItemCard'
-export const Items = ()=>{
+export const Items = ({itemList})=>{
     return(
         <div className="itemsContainer">
-            {items.map((i)=>{
-                return (<ItemCard name={i.name} tag={i.tag} price={i.price} stock={i.stock}/>)
+            {itemList.map((i)=>{
+                return (<ItemCard key={i.id} name={i.name} tag={i.tag} price={i.price} stock={i.stock}/>)
             })}
         </div>
     )
