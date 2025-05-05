@@ -6,7 +6,7 @@ export const SearchItems =({filterItemList})=>{
         <div className="searchContainer">
             <input type="text" value={searchText} onChange={(e)=>{
                 setSearchText(e.target.value)
-                if(e.target.value.length>=3){
+                if(e.target.value.length>=3 || e.target.value.length === 0){
                     filterItemList(e.target.value)
                 } 
             }}></input>

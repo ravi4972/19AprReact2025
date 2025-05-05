@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 
 import { Items } from "./Items"
 import {SearchItems} from './SearchItems'
+import ShimmerCard from './Shimmer'
 import {fetchItemsList} from '../utils/itemsApi'
 
 export const Body= ()=>{
@@ -20,13 +21,24 @@ export const Body= ()=>{
 
     function filterItemList(searchString){
         console.log('Item search clicked',searchString)
-        setItemsList(allItems.filter(i=>i.name.toLowerCase().includes(searchString.toLowerCase())))
+        if(searchString.length){
+            setItemsList(allItems.filter(i=>i.name.toLowerCase().includes(searchString.toLowerCase())))
+        } else{
+            setItemsList(allItems)
+        }
     }
     
     return(
         <>
             <SearchItems filterItemList={filterItemList}/>
-            <Items itemList={itemsList}/>
+
+            {itemsList.length === 0 ? (
+                <div className="itemsContainer">
+                    {[...Array(6)].map((_, i) => <ShimmerCard key={i} />)}
+                </div>
+                ) : (
+                <Items itemList={itemsList} />
+            )}
         </>
     )
 }
